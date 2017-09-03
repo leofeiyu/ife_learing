@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三栏式布局</title>
+    <style>
+        div {
+            border: 1px solid #999;
+            padding: 20px;
+        }
+        img {
+            width: 80px;
+            height: 80px;
+        }
+        .container {
+            background-color: #eee;
+            /* 清除浮动 */
+            overflow: auto;
+            zoom: 1;
+        }
+        .logo {
+            width: 160px;
+            background-color: white;
+            float: left;
+        }
+        .logo img {
+            float: left;
+        }
+        .logo span {
+            margin-left: 20px; 
+
+        }
+        .introduction {
+            /* 右外边距 margin-right=右浮动的盒子的width+其padd*2+其border*2;左外边距同理,
+            因为设计图还要20px的间距,我们分别再加20px */
+            margin-left: 222px;
+            margin-right: 142px;
+            background-color: white;
+        
+        }
+        .members {
+            width: 80px;
+            background-color: white;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <!-- 若有左、中、右三栏，中栏没有浮动（正常文本流），左栏和右栏div必须在中栏之前出现。这样才可以让这两个边栏浮动到它们的位置上（屏幕两侧），并让中栏的 内容将“流”入它们之间的空间。
+                如果浏览器在一个或者两个边栏div之前先发现中栏，那么中栏将占据屏幕的一侧或者两侧，这样浮动的部分就会跑到中栏的下 面而不是中栏的旁边了。 -->
+        <div class="logo">
+            <img src="../../Users/64120/Pictures/460720a4462309f7ff572693750e0cf3d6cad6c0.jpg" alt="团队logo">
+            <span>世界波</span>
+        </div>
+        <div class="members">
+            <img src="../../Users/64120/Pictures/460720a4462309f7ff572693750e0cf3d6cad6c0.jpg" alt="个人logo">
+            <img src="../../Users/64120/Pictures/460720a4462309f7ff572693750e0cf3d6cad6c0.jpg" alt="个人logo">
+            <img src="../../Users/64120/Pictures/460720a4462309f7ff572693750e0cf3d6cad6c0.jpg" alt="个人logo">
+            <img src="../../Users/64120/Pictures/460720a4462309f7ff572693750e0cf3d6cad6c0.jpg" alt="个人logo">
+        </div>
+        <div class="introduction">
+            <p>新闻</p>
+            <p>对于国足来说本场比赛的目标只有赢球。在双方历史战绩中，国足以4胜1平6负的战绩处于下风。本场比赛在联赛中状态正佳的武磊首发出场，郑智、蒿俊闵、张稀哲与于汉超也皆在首发阵容中。反观乌兹别克斯坦阵中被球迷最为熟悉的上海上港外援艾哈迈多夫、长春亚泰的伊斯梅洛夫与北京国安的克里梅茨本场比赛也是首发出场。</p>
+            <p>第2分钟，乌兹别克斯坦率先发难，艾哈迈多夫在禁区外的一脚远射打在冯潇霆的腿上产生变线，皮球向球门飞去，曾诚轻松将球得到.</p>
+            <p>第3分钟，李学鹏在左边路面对比克马耶夫的防守强行起球传中，禁区中的蒿俊闵将球碰了一下后打在对方防守队员腿上反弹回来，在禁区内武磊跟上一脚打门皮球稍稍偏出.</p>
+            <p>第9分钟，张稀哲在前场将球直塞到禁区内，可惜传球太靠近门将，</p>
+            <p>无人盯防的蒿俊闵没能碰到皮球，但是内斯特罗夫在拿球时出现严重失误没能拿住皮球，皮球向禁区外飞去，武磊插上想要补射可惜皮球被舒库洛夫提前解围出底线。</p>
+        </div>
+
+    </div>
+</body>
+</html>
