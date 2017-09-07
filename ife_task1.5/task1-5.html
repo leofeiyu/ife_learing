@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>零基础HTML及CSS编码（二）</title>
+    <link rel="stylesheet" href="task1-5.css" type="text/css">
+</head>
+<body>
+   <div class="top">
+       <div class="top-left">
+           <img src="../../慕课网企业网站制作/images/logo.jpg" alt="慕课网">
+        </div>
+       <div class="top-right">
+           <ul>
+               <li><a href="#">导航链接四</a></li>
+               <li><a href="#">导航链接三</a></li>
+               <li><a href="#">导航链接二</a></li>
+               <li><a href="#">导航链接一</a></li>
+           </ul>
+       </div>
+    </div> 
+    <div class="side">
+            <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
+            <form>
+                <!-- 为了实现表单内容的对齐，将表单内容放入表格之中，感觉跟bootstrap的栅栏式布局有些相似 -->
+                <table>
+                    <tr>
+                        <td class="left-column">请输入邮箱地址</td>
+                        <td><input type="text" value="这是一个文本输入框">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="color:gray; font-size:14px">邮箱地址请按要求格式输入</td>
+                    </tr>
+                    <tr>
+                        <td class="left-column">请输入密码</td>
+                        <td><input type="password" name=""></td>
+                    </tr>
+                    <tr>
+                        <td class="left-column">请重复输入密码</td>
+                        <td><input type="password" name=""></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="color:gray; font-size:14px">密码请为6-16位英文数字</td>
+                    </tr>
+                    <tr>
+                        <td class="left-column">性别</td>
+                        <td>
+                            <label for="male">男</label>
+                            <input type="radio" name="sex" id="male" checked>
+                            <label for="female">女</label>
+                            <input type="radio" name="sex" id="female">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left-column">城市</td>
+                        <td>
+                            <select>
+                                <option value="Beijing">北京</option>
+                                <option value="Shanghai">上海</option>
+                                <option value="Guangzhou">广州</option>
+                            </select> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left-column">爱好</td>
+                        <td>
+                            <input type="checkbox" name="habbits" id="sports">
+                            <label for="sports">运动</label>
+                            <input type="checkbox" name="habbits" id="art">
+                            <label for="art">艺术</label>
+                            <input type="checkbox" name="habbits" id="science">
+                            <label for="science">科学</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left-column">个人描述</td>
+                        <td><textarea>这是一个多行输入框，输入您的个人描述</textarea></td>
+                    </tr>   
+                </table>
+                <button type="submit">确认提交</button>   
+            </form>               
+        </div>
+    <div class="first-box">
+       <h1>文章一级标题</h1>
+       <h2>文章二级标题</h2>
+       <p class="message"><span>文章作者</span> <span>文章发表时间</span></p>
+       <p class="article">这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，赶紧跑！</p> 
+       <p class="article">这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，赶紧跑！</p>
+       <p class="article">这人话很多，这人话很多，<a href="#">这里有个门?</a>终于走掉了，终于走掉了，<b>这有个巨人!</b>这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多</p>
+       <img src="../ife_task1.1/d01f87d2a4e1849739b88b9979f3e88f.jpg" alt="这是一张图">
+       <p class="article">这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，赶紧跑！</p>
+       <p class="article">这人话很多，这人话很多，<a href="#">这里有个门?</a>终于走掉了，终于走掉了，<b>这有个巨人!</b>这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多</p>
+    </div>
+    <div class="second-box">
+            <h1>另一篇文章一级标题</h1>
+            <h2>文章二级标题</h2>
+            <p class="message"><span>文章作者</span> <span>文章发表时间</span></p>
+            <p class="article">这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，赶紧跑！</p> 
+            <p class="article">这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，赶紧跑！</p>
+            <p class="article">这人话很多，这人话很多，<a href="#">这里有个门?</a>终于走掉了，终于走掉了，<b>这有个巨人!</b>这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多，这人话很多</p>
+            <img src="../ife_task1.1/d01f87d2a4e1849739b88b9979f3e88f.jpg" alt="这是一张图">
+            <ul>
+                <li>列表项目一</li>
+                <li>列表项目一</li>
+                <li>列表项目一</li>
+            </ul>
+    </div>
+    <div class="third-box">
+        <h1>图片</h1>
+        <div class="img-box">
+            <p>好看的图片</p>
+            <img src="../ife_task1.1/d01f87d2a4e1849739b88b9979f3e88f.jpg" alt="这是一张图">
+        </div>
+        <div class="img-box">
+            <p>好看的图片</p>
+            <img src="../ife_task1.1/d01f87d2a4e1849739b88b9979f3e88f.jpg" alt="这是一张图">
+        </div>
+        <div class="img-box">
+            <p>好看的图片</p>
+            <img src="../ife_task1.1/d01f87d2a4e1849739b88b9979f3e88f.jpg" alt="这是一张图">
+        </div>
+        <div class="img-box">
+            <p>好看的图片</p>
+            <img src="../ife_task1.1/d01f87d2a4e1849739b88b9979f3e88f.jpg" alt="这是一张图">
+        </div>
+        <div class="img-box">
+            <p>好看的图片</p>
+            <img src="../ife_task1.1/d01f87d2a4e1849739b88b9979f3e88f.jpg" alt="这是一张图">
+        </div>
+        <div class="img-box">
+            <p>好看的图片</p>
+            <img src="../ife_task1.1/d01f87d2a4e1849739b88b9979f3e88f.jpg" alt="这是一张图">
+        </div>
+        <div class="img-box">
+            <p>好看的图片</p>
+            <img src="../ife_task1.1/d01f87d2a4e1849739b88b9979f3e88f.jpg" alt="这是一张图">
+        </div>
+    </div>
+    <div class="forth-box">
+        <h1>最后一篇文章一级标题</h1>
+        <h2>文章二级标题</h2>  
+        <p class="message"><span>文章作者</span> <span>文章发表时间</span></p>
+        <ol>
+            <li>排名1</li>
+            <li>排名2</li>
+            <li>排名3</li>
+        </ol>
+        <table>
+            <tr>
+                <th>表头</th>
+                <th>表头</th>
+                <th>表头</th>
+            </tr>
+            <tr>
+                <td>内容</td>
+                <td>内容</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr>
+                <td>内容</td>
+                <td>内容</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr>
+                <td>内容</td>
+                <td>内容</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr>
+                <td>内容</td>
+                <td>内容</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr class="last-line">
+                <td>总计</td>
+                <td colspan="2">1000</td>
+                <!-- colspan跨列，rowspan跨行 -->
+            </tr>           
+        </table>
+    </div>
+    <div class="copyright">版权所有&copy</div>
+</body>
+</html>
