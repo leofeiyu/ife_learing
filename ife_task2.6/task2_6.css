@@ -1,0 +1,10 @@
+div {
+    margin: 10px;
+}
+#aqi-input button {
+    vertical-align: top;
+}
+button {
+    background-color: white;
+    border-radius: 15%;
+}
